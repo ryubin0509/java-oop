@@ -1,0 +1,26 @@
+package ch06;
+
+public class CarMain {
+
+	public static void main(String[] args) {
+		
+		Car c1 = new Car();
+		System.out.println(c1.num);
+		System.out.println(c1.is);
+
+		Car c2 = new Car(7); 
+		System.out.println(c2.num);
+		System.out.println(c2.is);
+		
+		Car c3 = new Car(true);
+		System.out.println(c3.is);
+
+		Car c4 = new Car(99,true);
+		System.out.println(c4.num);
+		System.out.println(c4.is);
+		
+		c4.print();
+		c2.print();
+	}
+	
+}
